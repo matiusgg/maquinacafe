@@ -1,5 +1,14 @@
 <?php
 
+$faltadinero = 0;
+
+if($faltadinero == 1) {
+
+    echo('Tu dinero introducido no es suficiente para hacer la compra');
+}
+
+
+
 ?>
 
 
@@ -19,67 +28,99 @@
 <img src="img/logocafe.jpg" alt="">
 </h1>
 
+<h1>
+MAQUINA CAFE
+</h1>
+
 </header>
 
 <body>
 
-<form action="php/ticketcafe.php" method="post">
+<!-- FORM a ticketcafe.php-->
+
+<form action="php/datoscafe.php" method="post">
 
 <section>
     <article>
     
-    
+    <!-- select dinero-->
+
+
     <select name="dinero" id="">
-    <option value="2centimos">
+    <option value="">
+    </option>
+    <option value="0.2">
     0.2€
     </option>
-    <option value="5centimos">
+    <option value="0.5">
     0.5€
     </option>
-    <option value="10centimos">
+    <option value="0.10">
     0.10€
     </option>
-    <option value="20centimos">
+    <option value="0.20">
     0.20€
     </option>
-    <option value="50centimos">
+    <option value="0.50">
     0.50€
     </option>
-    <option value="1euro">
+    <option value="1">
     1€
     </option>
-    <option value="2euros">
+    <option value="2">
     2€
     </option>
-    <option value="5euros">
+    <option value="5">
     5€
     </option>
-    <option value="10euros">
+    <option value="10">
     10€
     </option>
-    <option value="20euros">
+    <option value="20">
     20€
     </option>
-    <option value="30euros">
+    <option value="30">
     30€
     </option>
-    <option value="40euros">
+    <option value="40">
     40€
     </option>
     </select>
 
+<!-- select productos-->
+
     <select name="productos" id="">
-    
-    
-    
-    
+    <option value="">
+    </option>
+    <option value="cafe solo">
+    Cafe Solo
+    </option>
+    <option value="capuccino">
+    Capuccino
+    </option>
+    <option value="cafe con leche">
+    Cafe con leche
+    </option>
+    <option value="cafe americano">
+    Cafe americano
+    </option>
     </select>
     
     </article>
+
+    </article>
+
+    <!-- Botones-->
+
+<button type="submit">
+COMPRAR
+</button>
+<button type="reset">
+BORRAR
+</button>
+
+
 </section>
-
-
-
 
 </form>
     
